@@ -1,0 +1,16 @@
+
+$form-label-font-weight: bold;
+
+// import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.btn-info {
+    @include button-variant($cyan, $cyan, white, $hover-color: white, $active-color: white);
+}
+
+.form-control {
+    &:disabled,
+    &[readonly] {
+        resize: none;
+  }
+}

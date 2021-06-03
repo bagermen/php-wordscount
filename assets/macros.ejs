@@ -1,0 +1,13 @@
+
+{% macro css_tags() %}
+    <% htmlWebpackPlugin.files.css.forEach(function(source){ %>
+        <link rel="stylesheet" href="<%= source %>"/>
+        <link href="{{ asset('<%= source %>') }}" rel="stylesheet"/>
+    <% });%>
+{% endmacro %}
+
+{% macro js_tags() %}
+    <% htmlWebpackPlugin.files.js.forEach(function(source){ %>
+        <script src="{{ asset('<%= source %>') }}"></script>
+    <% });%>
+{% endmacro %}

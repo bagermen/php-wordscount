@@ -1,0 +1,8 @@
+index:
+   path: /
+   controller: App\Controller\IndexController::index
+
+words:
+    type: annotation
+    prefix: /api
+    resource: ../src/Controller/Rest/

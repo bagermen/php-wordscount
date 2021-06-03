@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% import "assets.macros.twig" as assets %}
+
+{% block title %}Words Count{% endblock %}
+
+{% block stylesheets %}
+    {{ assets.css_tags() }}
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}
+
+{% block body %}
+<div id="app"></div>
+{{ assets.js_tags() }}
+{% endblock %}

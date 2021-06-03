@@ -1,0 +1,17 @@
+
+{% macro css_tags() %}
+    
+        <link rel="stylesheet" href="build/css/words.css?feb323f191aaf1b00c11"/>
+        <link href="{{ asset('build/css/words.css?feb323f191aaf1b00c11') }}" rel="stylesheet"/>
+    
+{% endmacro %}
+
+{% macro js_tags() %}
+    
+        <script src="{{ asset('build/js/manifest.js?feb323f191aaf1b00c11') }}"></script>
+    
+        <script src="{{ asset('build/js/vendor.js?feb323f191aaf1b00c11') }}"></script>
+    
+        <script src="{{ asset('build/js/words.js?feb323f191aaf1b00c11') }}"></script>
+    
+{% endmacro %}
